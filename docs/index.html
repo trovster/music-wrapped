@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Music Wrapped Web Components Demo</title>
+
+        <link rel="stylesheet" href="./style.css"/>
+    </head>
+    <body>
+        <div class="intro">
+            <h1>Music Wrapped Web Component</h1>
+
+            <music-wrapped class="contained spotify" seconds="7007220" genre="Pop Punk">
+                <ol title="Top Artists">
+                    <li>Spanish Love Songs</li>
+                    <li>Hot Mulligan</li>
+                    <li>Heart Attack Man</li>
+                    <li>Real Friends</li>
+                    <li>Trophy Eyes</li>
+                </ol>
+                <ol title="Top Songs">
+                    <li>Sunshine</li>
+                    <li>The World</li>
+                    <li>Pendulum</li>
+                    <li>Sway</li>
+                    <li>Freak of Nature</li>
+                </ol>
+            </music-wrapped>
+
+            <p>
+                This is a demo of the music wrapped web component.
+                <span class="note">The default design is inspired by Spotify Wrapped.</span>
+            </p>
+            <p>
+                You can download code from the
+                <a href="https://github.com/trovster/music-wrapped">music wrapped</a>
+                repository on GitHub.
+            </p>
+
+            <h2>Web Components</h2>
+            <p>
+                These cards are built using
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Components">Web Components</a>
+                and must be imported before they are rendered.
+            </p>
+
+            <pre><code class="javascript">import './MusicWrapped.js';</code></pre>
+        </div>
+
+        <div id="cards">
+            <h2>Cards</h2>
+
+            <p>
+                To use the music wrapped card you must create a
+                <code>&#60;music-wrapped&#62;</code> element with the required
+                lists inside. The <code>title=""</code> attribute on the list is
+                used for the list title. You can add the <em>optional</em> minutes
+                listened and top genre by using attributes.
+            </p>
+
+            <dl id="attributes">
+                <dt><code>seconds="integer"</code></dt>
+                <dd>The total time listened, in seconds.</dd>
+                <dd>Represented in minutes.</dd>
+
+                <dt><code>genre="string"</code></dt>
+                <dd>The top genre value.</dd>
+            </dl>
+
+            <h3>Spotify Wrapped</h3>
+            <p>
+                These are inspired by the 2023 Spotify Wrapped designs.
+            </p>
+
+            <music-wrapped class="contained spotify" seconds="7007220" genre="Pop Punk">
+                <ol title="Top Artists">
+                    <li>Spanish Love Songs</li>
+                    <li>Hot Mulligan</li>
+                    <li>Heart Attack Man</li>
+                    <li>Real Friends</li>
+                    <li>Trophy Eyes</li>
+                </ol>
+                <ol title="Top Songs">
+                    <li>Sunshine</li>
+                    <li>The World</li>
+                    <li>Pendulum</li>
+                    <li>Sway</li>
+                    <li>Freak of Nature</li>
+                </ol>
+            </music-wrapped>
+
+            <music-wrapped class="contained spotify spotify-mauve" seconds="7007220" genre="Pop Punk">
+                <ol title="Top Artists">
+                    <li>Spanish Love Songs</li>
+                    <li>Hot Mulligan</li>
+                    <li>Heart Attack Man</li>
+                    <li>Real Friends</li>
+                    <li>Trophy Eyes</li>
+                </ol>
+                <ol title="Top Songs">
+                    <li>Sunshine</li>
+                    <li>The World</li>
+                    <li>Pendulum</li>
+                    <li>Sway</li>
+                    <li>Freak of Nature</li>
+                </ol>
+            </music-wrapped>
+
+            <music-wrapped class="contained spotify spotify-mustard" seconds="7007220" genre="Pop Punk">
+                <ol title="Top Artists">
+                    <li>Spanish Love Songs</li>
+                    <li>Hot Mulligan</li>
+                    <li>Heart Attack Man</li>
+                    <li>Real Friends</li>
+                    <li>Trophy Eyes</li>
+                </ol>
+                <ol title="Top Songs">
+                    <li>Sunshine</li>
+                    <li>The World</li>
+                    <li>Pendulum</li>
+                    <li>Sway</li>
+                    <li>Freak of Nature</li>
+                </ol>
+            </music-wrapped>
+
+            <music-wrapped class="contained spotify spotify-aqua" seconds="7007220" genre="Pop Punk">
+                <ol title="Top Artists">
+                    <li>Spanish Love Songs</li>
+                    <li>Hot Mulligan</li>
+                    <li>Heart Attack Man</li>
+                    <li>Real Friends</li>
+                    <li>Trophy Eyes</li>
+                </ol>
+                <ol title="Top Songs">
+                    <li>Sunshine</li>
+                    <li>The World</li>
+                    <li>Pendulum</li>
+                    <li>Sway</li>
+                    <li>Freak of Nature</li>
+                </ol>
+            </music-wrapped>
+
+            <music-wrapped class="contained spotify spotify-purple" seconds="7007220" genre="Pop Punk">
+                <ol title="Top Artists">
+                    <li>Spanish Love Songs</li>
+                    <li>Hot Mulligan</li>
+                    <li>Heart Attack Man</li>
+                    <li>Real Friends</li>
+                    <li>Trophy Eyes</li>
+                </ol>
+                <ol title="Top Songs">
+                    <li>Sunshine</li>
+                    <li>The World</li>
+                    <li>Pendulum</li>
+                    <li>Sway</li>
+                    <li>Freak of Nature</li>
+                </ol>
+            </music-wrapped>
+        </div>
+
+        <p class="footer note">
+            Download code from the
+            <a href="https://github.com/trovster/music-wrapped">music wrapped</a>
+            repository on GitHub.
+        </p>
+
+        <script type="module">
+            import '../src/MusicWrapped.js';
+        </script>
+    </body>
+</html>
