@@ -132,7 +132,8 @@ music-wrapped.spotify-aqua {
     background-image: url(images/spotify/aqua.webp);
 }
 music-wrapped.spotify-purple {
-    background-color: #b0b1ff;
+    color: #fff;
+    background-color: #400073;
     background-image: url(images/spotify/purple.webp);
 }
 
