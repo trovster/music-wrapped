@@ -21,6 +21,8 @@ export default class MusicWrapped extends HTMLElement {
       const heading = document.createElement('h3');
       heading.textContent = ol.getAttribute('title');
 
+      ol.removeAttribute('title');
+
       container.appendChild(wrapper);
       wrapper.appendChild(heading);
       wrapper.appendChild(ol);
