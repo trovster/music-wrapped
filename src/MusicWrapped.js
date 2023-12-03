@@ -60,6 +60,17 @@ export default class MusicWrapped extends HTMLElement {
         font-weight: bold;
       }
 
+      ol a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      ol a:hover,
+      ol a:focus,
+      ol a:active {
+        text-decoration: underline;
+      }
+
       p {
         margin: 0 0 1rem;
         font-size: 2rem;
